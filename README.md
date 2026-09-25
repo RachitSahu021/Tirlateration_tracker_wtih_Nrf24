@@ -169,4 +169,4 @@ Notes
 - A complete three-anchor scan takes approximately 60 ms plus processing time.
 - The GUI stores and displays the latest 200 valid smoothed positions.
 
-One small code fix I recommend before committing: remove the `Serial.println("READY,esp32_receiver");` inside the ESP32 `loop()`. It prints
+One small code fix I recommend before committing: remove the `Serial.println("READY,esp32_receiver");` inside the ESP32 `loop()`. It prints continuously and can flood the serial connection.
